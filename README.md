@@ -2,11 +2,11 @@
 
 #### 项目搭建步骤
 
-1. 新建react项目 
-    create-react-app myapp
+1. 新建react项目
+   `create-react-app myapp`
 2. Npm镜像 
-    npm config set registry https://registry.npm.taobao.org --global 
-    npm config set disturl https://npm.taobao.org/dist --global
+    `npm config set registry https://registry.npm.taobao.org --global `
+    `npm config set disturl https://npm.taobao.org/dist --global`
 3. 暴露配置
     npm run eject
 4. 安装按需引入插件 
