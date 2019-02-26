@@ -24,6 +24,9 @@
         `applyMiddleware(thunk),`
         `window.devToolsExtension ? window.devToolsExtension():f=>f`
      `))`
+3. 多个reducer合并在一起。 
+	 - `import {combineReducer} from 'redux';`
+	 - `combineReducer({reducer1,reducer2})`
 3. 安装@connect 装饰器 依赖 ,在package.json "babel"对象中加入如下代码
    - `yarn add babel-plugin-transform-decorators-legacy --save-dev`
    - `+ ["plugins": [["@babel/plugin-proposal-decorators", { "legacy": true }]]]`
