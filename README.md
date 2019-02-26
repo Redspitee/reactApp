@@ -22,7 +22,7 @@
    - `安装redux工具：https://github.com/reduxjs/redux-devtools`
    - `const store = createStore(reducerName,compose(`
         `applyMiddleware(thunk),`
-        `window.devToolsExtension ? window.devToolsExtension():f=>f`
+        `window.__REDUX_DEVTOOLS_EXTENSION__ ? window.__REDUX_DEVTOOLS_EXTENSION__():f=>f`
      `))`
 3. 多个reducer合并在一起。 
 	 - `import {combineReducer} from 'redux';`
