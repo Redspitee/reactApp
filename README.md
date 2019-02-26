@@ -1,4 +1,4 @@
-# reactApp
+# React + Redux + React-router 项目构建
 
 #### 项目搭建
 
