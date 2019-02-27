@@ -13,7 +13,7 @@
    - `yarn add babel-plugin-import --save-dev`
 5. 安装antd脚手架
    - `yarn add antd --save-dev`     
-6. 实现按需引入antd：在congif文件夹下webpack.config.js中(约350行)，loader: require.resolve('babel-loader')的对象plugins数组里加
+6. 实现按需引入antd：在package.json "plugins" 数组里添加
    - `["import", {libraryName: "antd", style: 'css'}]` 
 #### 引入Redux
 1. 安装 react-redux redux redux-thunk插件
@@ -34,13 +34,20 @@
 1. 安装react-router
    - `yarn add react-router-dom`
 2. 项目里使用router
-	 - `import {BrowserRouter,Route,Link} from 'react-router-dom'`
+   - `import {BrowserRouter,Route,Link} from 'react-router-dom'`
 3. react-router组件作用
-	- `<Redirect from='/a' to="/b" ></Redirect>当用户访问a页面时会自动跳到b页面`
-	- `当前页面未匹配到<Redirect /> 之前路由会执行Redirect` 
-	- `<Switch>只渲染命中的第一个路由`
-	- `<Route exact /> exact绝对匹配`
-	- `<Route path='/a/:num' /> 在访问路由'/a/5'时，可在a页面this.props.match.params中获取到{num:5}` 
+   - `<Redirect from='/a' to="/b" ></Redirect>当用户访问a页面时会自动跳到b页面`
+   - `当前页面未匹配到<Redirect /> 之前路由会执行Redirect` 
+   - `<Switch>只渲染命中的第一个路由`
+   - `<Route exact /> exact绝对匹配`
+   - `<Route path='/a/:num' /> 在访问路由'/a/5'时，可在a页面this.props.match.params中获取到{num:5}` 
+#### 跨域配置 在package.json中设置
+   - `"proxy":"http://ip:port"`
+#### Koa2搭建后台服务器
+1. 安装koa 及 koa-router
+   - `yarn add koa koa-router`
+
+
 
     
 

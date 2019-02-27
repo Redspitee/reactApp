@@ -3,7 +3,8 @@ import App from '../App';
 import { connect } from 'react-redux';
 import {Redirect,Route,Link} from 'react-router-dom'
 import {LOG_OUT} from '../redux/login.redux'
-import { Button } from 'antd'; 
+import { Button } from 'antd-mobile'; 
+
 function Zxy(){
 	return <h2>Zxy</h2>
 }

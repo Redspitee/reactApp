@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import { Button } from 'antd';
+import { Button } from 'antd-mobile';
 import { ADD_ACTION, REMOVE_ACTION, ADD_ASYNC_ACTION } from './redux/dashbord.redux';
 
 @connect(

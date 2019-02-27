@@ -1,4 +1,4 @@
-import Axios from "axios";
+import axios from '../config/axios.config.js';
 
 const LOGIN = 'login';
 const LOGOUT = 'logout';
@@ -40,7 +40,7 @@ export const LOG_OUT = ()=>{
 } 
 export const GET_USER = ()=>{
 	return dispatch => {
-		Axios.get('/user').then(res=>{
+		axios.get('/user').then(res=>{
 			if(res.status === 200) {
 				dispatch({
 					type: GETUSER,

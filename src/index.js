@@ -3,11 +3,12 @@ import ReactDOM from 'react-dom';
 import { createStore,applyMiddleware,compose } from 'redux';
 import { Provider } from 'react-redux';
 import thunk from 'redux-thunk';
-import { BrowserRouter, Route, Switch, Redirect} from 'react-router-dom';
-import {reducerName} from './index.redux';
-import './index.css';
+import { BrowserRouter, Route, Switch, Redirect } from 'react-router-dom';
+import {reducerName} from './reducer/reducers';
+
 import Dashbord from './pages/Dashbord';
 import Login from './pages/Login';
+import './index.css';
 
 const store = createStore(reducerName,compose(
 	applyMiddleware(thunk),
