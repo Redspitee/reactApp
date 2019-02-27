@@ -12,11 +12,11 @@ class Login extends Component{
 		this.props.GET_USER()
 	}
 	render(){
-		console.log(this.props)
-		const { isLog ,LOG_IN}  = this.props;
+		const { isLog ,LOG_IN,username,age}  = this.props;
 		return (
 			<div>
 				{isLog? <Redirect to="/dashbord" /> : null}
+				{username} 今年 {age}岁
 				<Button onClick={LOG_IN}>登陆</Button>
 			</div>
 		)
