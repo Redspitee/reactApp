@@ -3,7 +3,11 @@
 #### 项目搭建
 
 1. 新建react项目
-   - `create-react-app myapp`
+   
+```
+    create-react-app myapp
+
+```
 2. Npm镜像 
    - `npm config set registry https://registry.npm.taobao.org --global`
    - `npm config set disturl https://npm.taobao.org/dist --global`
