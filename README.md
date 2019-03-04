@@ -1,5 +1,15 @@
 # React + Redux + React-router + Koa 项目构建
 
+下载本项目后
+
+```
+	yarn install
+	yarn start 
+	node koaServer/index.js
+```
+
+
+本项目是以下流程的产物
 #### 项目搭建
 
 1. 新建react项目
@@ -100,6 +110,12 @@
 			age: '18'
 		}
 	})
+```
+3. 监听端口
+
+```
+	const app = new Koa()
+	app.listen(9093)
 ```
 
 
