@@ -1,4 +1,4 @@
-# React + Redux + React-router 项目构建
+# React + Redux + React-router + Koa 项目构建
 
 #### 项目搭建
 
@@ -46,6 +46,17 @@
 #### Koa2搭建后台服务器
 1. 安装koa 及 koa-router
    - `yarn add koa koa-router`
+2. 创建路由
+```
+	const router = new Router()
+	router.get('/user', ctx => {
+		ctx.body = {
+			username: '张小月',
+			age: '18'
+		}
+	})
+```
+
 
 
 
