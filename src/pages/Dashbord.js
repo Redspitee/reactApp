@@ -1,9 +1,9 @@
 import React,{Component} from 'react';
 import App from '../App';
 import { connect } from 'react-redux';
-import {Redirect,Route,Link} from 'react-router-dom'
+import {Redirect,Route} from 'react-router-dom'
 import {LOG_OUT} from '../redux/login.redux'
-import { Button } from 'antd-mobile'; 
+import { Button, WingBlank, NavBar} from 'antd-mobile'; 
 
 function Zxy(){
 	return <h2>Zxy</h2>
@@ -20,17 +20,13 @@ class Dashbord extends Component{
 		const redirectToLogin =  <Redirect to="/login" />;
 		const app =(
 			<div>
-				{isLog ? <Button onClick={LOG_OUT}>退出登陆</Button>:null}
-				<ul>
-					<li>
-						<Link to={`${match.url}`}>App</Link>
-					</li>
-					<li>
-						<Link to={`${match.url}/zxy`} >zxy</Link>
-					</li>
-				</ul>
+				<NavBar	mode="light">{this.props.location.pathname} 路由</NavBar>
+
 				<Route path={`${match.url}`} exact component={App}></Route>
 				<Route path={`${match.url}/zxy`} component={Zxy}></Route>
+				<WingBlank>
+					{isLog ? <Button onClick={LOG_OUT}>退出登陆</Button>:null}
+				</WingBlank>
 			</div>
 		)
 		return isLog? app:redirectToLogin;

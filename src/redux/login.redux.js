@@ -1,4 +1,4 @@
-import axios from '../config/axios.config.js';
+import axios from 'axios';
 
 const LOGIN = 'login';
 const LOGOUT = 'logout';

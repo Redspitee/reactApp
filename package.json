@@ -5,7 +5,6 @@
   "dependencies": {
     "@babel/core": "7.2.2",
     "@svgr/webpack": "4.1.0",
-    "antd": "^3.13.6",
     "antd-mobile": "^2.2.9",
     "axios": "^0.18.0",
     "babel-core": "7.0.0-bridge.0",
@@ -136,7 +135,10 @@
       ],
       [
         "import",
-        {"libraryName": "antd-mobile", "style": "css"}
+        {
+          "libraryName": "antd-mobile",
+          "style": "css"
+        }
       ]
     ]
   },

@@ -33,14 +33,14 @@
 ```     
    yarn add babel-plugin-import --save-dev
 ```
-5. 安装antd脚手架
+5. 安装antd-mobile脚手架
 
 ``` 
-   yarn add antd --save-dev 
+   yarn add antd-mobile --save-dev 
 ```  
-6. 实现按需引入antd：在package.json "plugins" 数组里添加
+6. 实现按需引入antd-mobile：在package.json "plugins" 数组里添加
 ```
-   ["import", {libraryName: "antd", style: 'css'}] 
+   ["import", {libraryName: "antd-mobile", style: 'css'}] 
 ```
 #### 引入Redux
 1. 安装 react-redux redux redux-thunk插件

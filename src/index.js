@@ -8,6 +8,7 @@ import {reducerName} from './reducer/reducers';
 
 import Dashbord from './pages/Dashbord';
 import Login from './pages/Login';
+import './config';
 import './index.css';
 
 const store = createStore(reducerName,compose(
