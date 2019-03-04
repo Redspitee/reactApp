@@ -69,6 +69,12 @@
    yarn add babel-plugin-transform-decorators-legacy --save-dev
    + ["plugins": [["@babel/plugin-proposal-decorators", { "legacy": true }]]]
 ```
+4. 引入Provider  把 store 统一提供给其子组件
+
+```
+	import { Provider } from 'react-redux';
+	<Provider store={store}></Provider>
+```
 #### 引入React-router4
 1. 安装react-router
 
