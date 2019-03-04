@@ -86,8 +86,12 @@
 ```
 #### Koa2搭建后台服务器
 1. 安装koa 及 koa-router
-   - `yarn add koa koa-router`
+
+``` 
+ 	yarn add koa koa-router`
+``` 
 2. 创建路由
+
 ```
 	const router = new Router()
 	router.get('/user', ctx => {
