@@ -1,4 +1,4 @@
-# React + Redux + React-router + Koa 项目构建
+# React + Redux + React-router + Koa + mongoDB 项目构建
 
 下载本项目后
 
